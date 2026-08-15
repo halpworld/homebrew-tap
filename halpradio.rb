@@ -5,21 +5,21 @@
 class Halpradio < Formula
   desc "LazyVim-inspired Terminal Internet Radio Streamer"
   homepage "https://github.com/halpworld/halpradio"
-  version "0.0.3"
-  license "MIT"
+  version "0.0.4"
+  license "GPL-3.0-or-later"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/halpworld/halpradio/releases/download/v0.0.3/halpradio_0.0.3_darwin_amd64.tar.gz"
-      sha256 "196c9cfd92c7608187d57d6ff818c78ad3292abe079db2f9cb5c0c95458e6624"
+      url "https://github.com/halpworld/halpradio/releases/download/v0.0.4/halpradio_0.0.4_darwin_amd64.tar.gz"
+      sha256 "aff54a3544e0ff3f0ca97389aa8d436394409dfa96250953746ed627f08c0eed"
 
       define_method(:install) do
         bin.install "halpradio"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/halpworld/halpradio/releases/download/v0.0.3/halpradio_0.0.3_darwin_arm64.tar.gz"
-      sha256 "05ad5683903efb376b7b067a7cbf6d88d35b86a49246d958b402a81094b301ec"
+      url "https://github.com/halpworld/halpradio/releases/download/v0.0.4/halpradio_0.0.4_darwin_arm64.tar.gz"
+      sha256 "49ae6cf021886382ca0cb627ab0ad6dffe47b3866382217fb00da3cf5537ad94"
 
       define_method(:install) do
         bin.install "halpradio"
@@ -29,15 +29,15 @@ class Halpradio < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/halpworld/halpradio/releases/download/v0.0.3/halpradio_0.0.3_linux_amd64.tar.gz"
-      sha256 "6169a1eefa28b9e8c2a08dfa0a8bb443cd5e443153615a41c9cce7a0cc62b058"
+      url "https://github.com/halpworld/halpradio/releases/download/v0.0.4/halpradio_0.0.4_linux_amd64.tar.gz"
+      sha256 "474f4a981b542981f7defac94f6288585d4a61998335d4063856e60b763b8768"
       define_method(:install) do
         bin.install "halpradio"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/halpworld/halpradio/releases/download/v0.0.3/halpradio_0.0.3_linux_arm64.tar.gz"
-      sha256 "6a0e11b5b6d99bf08a8c12acca7dba1997e2a92fe78001ed8b19c4d6f74a59df"
+      url "https://github.com/halpworld/halpradio/releases/download/v0.0.4/halpradio_0.0.4_linux_arm64.tar.gz"
+      sha256 "7542c90702e1337236cc5deaca037dc7b5cb2c0f12ee49b4ae935583e729824f"
       define_method(:install) do
         bin.install "halpradio"
       end
