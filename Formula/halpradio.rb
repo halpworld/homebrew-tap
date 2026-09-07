@@ -11,7 +11,7 @@ class Halpradio < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/halpworld/halpradio/releases/download/v0.4.0/halpradio_0.4.0_darwin_amd64.tar.gz"
-      sha256 "e37a4f0b684191fc7df68e5545d25625453d66a9cdff4218430af95e7fba9df6"
+      sha256 "524231f9f5f562aa37f893a8aa2810e6ef049a94b8e36dd46b12d5f7d77e8602"
 
       define_method(:install) do
         bin.install "halpradio"
@@ -19,7 +19,7 @@ class Halpradio < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/halpworld/halpradio/releases/download/v0.4.0/halpradio_0.4.0_darwin_arm64.tar.gz"
-      sha256 "9c45022092057f5f5b6731dd7999b62a1cd9a1fc90b074e2a0f699b450cc45af"
+      sha256 "7010bfba8e40757b46e9e4b2eb25d0510a82fc17444a9bb00694c509b495224f"
 
       define_method(:install) do
         bin.install "halpradio"
@@ -30,14 +30,14 @@ class Halpradio < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/halpworld/halpradio/releases/download/v0.4.0/halpradio_0.4.0_linux_amd64.tar.gz"
-      sha256 "e8be602df22779b3f5fe13ca9d147cc488b5afe0ae9021e59386a9fa23f5b6c2"
+      sha256 "e8ed6cd1e9c14c6d612edb5a0db1e1da6ec833900e7794ee82b7a92379cdcc61"
       define_method(:install) do
         bin.install "halpradio"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/halpworld/halpradio/releases/download/v0.4.0/halpradio_0.4.0_linux_arm64.tar.gz"
-      sha256 "a50d5e9f678beef9152792e372e3f49534070a4948222d6ef254dabc71de1804"
+      sha256 "82a9cbc58b677c0245d931ddbea7ac6da7228389a7187166db8b1dffe86ba3a1"
       define_method(:install) do
         bin.install "halpradio"
       end
